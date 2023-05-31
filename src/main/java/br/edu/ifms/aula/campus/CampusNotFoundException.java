@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.server.ResponseStatusException;
 
 /**
- *
  * @author 1513003
  */
 @ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "Campus não encontrado")
@@ -18,5 +17,5 @@ public class CampusNotFoundException extends ResponseStatusException {
     public CampusNotFoundException(String errorMessage) {
         super(HttpStatus.NOT_FOUND, errorMessage);
     }
-    
+
 }

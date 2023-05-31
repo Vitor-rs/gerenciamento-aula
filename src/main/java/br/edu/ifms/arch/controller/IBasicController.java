@@ -9,9 +9,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 
 /**
- *
- * @author santos
  * @param <DTO>
+ * @author santos
  */
 public interface IBasicController<DTO> {
 

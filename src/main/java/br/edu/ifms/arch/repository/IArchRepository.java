@@ -8,13 +8,12 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
 
 /**
- *
- * @author nicho
  * @param <T>
  * @param <K>
+ * @author nicho
  */
-public interface IArchRepository<T, K> 
+public interface IArchRepository<T, K>
         extends JpaRepository<T, K>,
-        JpaSpecificationExecutor<T>{
-    
+        JpaSpecificationExecutor<T> {
+
 }

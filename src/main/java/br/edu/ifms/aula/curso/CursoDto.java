@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 /**
- *
  * @author nicho
  */
 @Getter
@@ -22,7 +21,7 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class CursoDto extends AdapterBaseObjectDto {
-    
+
     private CampusDto campus;
-    
+
 }

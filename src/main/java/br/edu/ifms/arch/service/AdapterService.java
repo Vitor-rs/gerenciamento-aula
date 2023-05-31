@@ -5,18 +5,18 @@
 package br.edu.ifms.arch.service;
 
 import br.edu.ifms.arch.ISimpleMapper;
-import java.util.List;
-import java.util.Optional;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+import java.util.Optional;
+
 /**
- *
- * @author nicho
  * @param <T>
  * @param <K>
  * @param <F>
  * @param <R>
+ * @author nicho
  */
 public class AdapterService<T, K, F, R>
         implements IService<T, K, F, R> {

@@ -7,15 +7,11 @@ package br.edu.ifms.aula.professor;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import lombok.*;
+
 import java.io.Serializable;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
 
 /**
- *
  * @author 1513003
  */
 @Entity // Cria uma tabela no SGBD com o mesmo nome da classe

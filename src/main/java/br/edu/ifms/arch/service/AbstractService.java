@@ -7,19 +7,19 @@ package br.edu.ifms.arch.service;
 import br.edu.ifms.arch.BaseObjectNotFoundException;
 import br.edu.ifms.arch.ISimpleMapper;
 import br.edu.ifms.arch.MapperUtils;
-import java.util.List;
-import java.util.Optional;
+import br.edu.ifms.arch.repository.IArchRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
-import br.edu.ifms.arch.repository.IArchRepository;
+
+import java.util.List;
+import java.util.Optional;
 
 /**
- *
- * @author 1513003
  * @param <T>
  * @param <K>
  * @param <F>
  * @param <R>
+ * @author 1513003
  */
 public abstract class AbstractService<T, K, F, R extends IArchRepository<T, K>>
         extends AdapterService<T, K, F, R> {
@@ -66,10 +66,10 @@ public abstract class AbstractService<T, K, F, R extends IArchRepository<T, K>>
         return repository.findById(id)
                 .map(entity -> mapper.update(form, entity))
                 .orElseThrow(() -> new BaseObjectNotFoundException(
-                String
-                        .format("Não existe objetio da classe %s com o código %s.",
-                                this.getClass().getName(), id.toString())
-        ));
+                        String
+                                .format("Nï¿½o existe objetio da classe %s com o cï¿½digo %s.",
+                                        this.getClass().getName(), id.toString())
+                ));
     }
 
     @Override
@@ -80,8 +80,8 @@ public abstract class AbstractService<T, K, F, R extends IArchRepository<T, K>>
                     return entity;
                 })
                 .orElseThrow(() -> new BaseObjectNotFoundException(
-                "Não é possível excluir o registro solicitado."
-        ));
+                        "Nï¿½o ï¿½ possï¿½vel excluir o registro solicitado."
+                ));
     }
 
 }

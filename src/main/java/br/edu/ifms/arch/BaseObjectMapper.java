@@ -4,19 +4,14 @@
  */
 package br.edu.ifms.arch;
 
-import br.edu.ifms.arch.dto.AdapterBaseObjectForm;
 import br.edu.ifms.arch.dto.AdapterBaseObjectDto;
-import java.util.List;
-import org.mapstruct.MapperConfig;
-import org.mapstruct.Mapping;
-import org.mapstruct.MappingInheritanceStrategy;
-import org.mapstruct.MappingTarget;
-import org.mapstruct.NullValueCheckStrategy;
-import org.mapstruct.NullValueMappingStrategy;
+import br.edu.ifms.arch.dto.AdapterBaseObjectForm;
+import org.mapstruct.*;
 import org.springframework.data.domain.Page;
 
+import java.util.List;
+
 /**
- *
  * @author 1513003
  */
 @MapperConfig(

@@ -4,16 +4,16 @@
  */
 package br.edu.ifms.arch;
 
-import java.util.List;
 import org.mapstruct.MappingTarget;
 import org.springframework.data.domain.Page;
 
+import java.util.List;
+
 /**
- *
- * @author nicho
  * @param <T>
  * @param <DTO>
  * @param <FORM>
+ * @author nicho
  */
 public interface ISimpleMapper<T, DTO, FORM> {
 

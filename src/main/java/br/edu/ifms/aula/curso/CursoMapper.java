@@ -4,28 +4,28 @@
  */
 package br.edu.ifms.aula.curso;
 
-import br.edu.ifms.aula.campus.*;
 import br.edu.ifms.arch.BaseObjectMapper;
 import br.edu.ifms.arch.ISimpleMapper;
-import java.util.List;
+import br.edu.ifms.aula.campus.CampusMapper;
 import org.mapstruct.InheritConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 import org.mapstruct.factory.Mappers;
 import org.springframework.data.domain.Page;
 
+import java.util.List;
+
 /**
- *
  * @author nicho
  */
 @Mapper(
         config = BaseObjectMapper.class,
         uses = {CampusMapper.class}
-        )
+)
 public interface CursoMapper extends ISimpleMapper<Curso, CursoDto, CursoForm> {
-    
+
     public static final CursoMapper INSTANCE = Mappers.getMapper(CursoMapper.class);
-    
+
     @InheritConfiguration(name = "toEntity")
     @Override
     public Curso formToEntity(CursoForm dto);
@@ -34,7 +34,7 @@ public interface CursoMapper extends ISimpleMapper<Curso, CursoDto, CursoForm> {
     public Curso dtoToEntity(CursoDto dto);
 
     @Override
-    public  CursoDto toDto(Curso entity);
+    public CursoDto toDto(Curso entity);
 
     @InheritConfiguration(name = "update")
     @Override

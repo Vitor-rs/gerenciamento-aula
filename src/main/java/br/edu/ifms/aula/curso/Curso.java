@@ -16,7 +16,6 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 /**
- *
  * @author nicho
  */
 @Data
@@ -27,7 +26,9 @@ import lombok.experimental.SuperBuilder;
 @Entity
 @SequenceGenerator(sequenceName = "curso_sequence", name = "baseObjectSequence", allocationSize = 1)
 public class Curso extends BaseObject {
-    
+
     @ManyToOne
     private Campus campus;
+
+
 }

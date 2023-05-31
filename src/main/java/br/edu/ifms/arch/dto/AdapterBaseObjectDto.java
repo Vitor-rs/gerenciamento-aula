@@ -4,7 +4,6 @@
  */
 package br.edu.ifms.arch.dto;
 
-import br.edu.ifms.arch.IBase;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -14,7 +13,6 @@ import org.springframework.util.StringUtils;
 
 
 /**
- *
  * @author santos
  */
 @Getter
@@ -38,7 +36,7 @@ public class AdapterBaseObjectDto
     public String getNome() {
         return nome;
     }
-    
+
     @Override
     public Boolean isValido() {
         return StringUtils.hasText(nome);

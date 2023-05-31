@@ -5,14 +5,14 @@
 package br.edu.ifms.aula.curso;
 
 import br.edu.ifms.arch.controller.AbstractBasicController;
-import java.net.URI;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import java.net.URI;
+
 /**
- *
  * @author nicho
  */
 @RestController
@@ -32,5 +32,5 @@ public class CursoController extends AbstractBasicController<Curso, CursoDto, Cu
                 .buildAndExpand(entity.getId())
                 .toUri();
     }
-    
+
 }

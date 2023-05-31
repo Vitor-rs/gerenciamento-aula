@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.server.ResponseStatusException;
 
 /**
- *
  * @author nicho
  */
 @ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "BaseObject não encontrado")

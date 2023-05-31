@@ -7,16 +7,20 @@ package br.edu.ifms.arch;
 import java.time.LocalDateTime;
 
 /**
- *
  * @author 1513003
  */
 public interface IBase {
-    
-    public void setId(Long id);
+
     public Long getId();
-    public void setNome(String nome);
+
+    public void setId(Long id);
+
     public String getNome();
-    public void setCreatedAt(LocalDateTime value);
+
+    public void setNome(String nome);
+
     public LocalDateTime getCreatedAt();
-    
+
+    public void setCreatedAt(LocalDateTime value);
+
 }

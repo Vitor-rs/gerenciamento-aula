@@ -4,16 +4,16 @@
  */
 package br.edu.ifms.arch;
 
-import java.util.List;
 import org.springframework.data.domain.Page;
 
+import java.util.List;
+
 /**
- *
- * @author nicho
  * @param <T>
  * @param <DTO>
  * @param <LEANDTO>
  * @param <FORM>
+ * @author nicho
  */
 public interface ILeanMapper<T, DTO, LEANDTO, FORM>
         extends ISimpleMapper<T, DTO, FORM> {

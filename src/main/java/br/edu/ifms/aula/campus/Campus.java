@@ -12,7 +12,6 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 /**
- *
  * @author nicholas.santos
  */
 @SuperBuilder
@@ -21,5 +20,5 @@ import lombok.experimental.SuperBuilder;
 @Entity
 @SequenceGenerator(sequenceName = "campus_sequence", name = "baseObjectSequence", allocationSize = 1)
 public class Campus extends BaseObject {
-    
+
 }

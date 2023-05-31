@@ -5,15 +5,16 @@
 package br.edu.ifms.arch.dto;
 
 /**
- * Interface para Formulário para BaseObject. Interface utilizada para definir
- os métodos básicos para a implementação do padrão DTO para envio de dados
- para os serviços cuja Classe de Negócio seja uma subclasse de
- <class>BaseObject</class>.
+ * Interface para Formulï¿½rio para BaseObject. Interface utilizada para definir
+ * os mï¿½todos bï¿½sicos para a implementaï¿½ï¿½o do padrï¿½o DTO para envio de dados
+ * para os serviï¿½os cuja Classe de Negï¿½cio seja uma subclasse de
+ * <class>BaseObject</class>.
  *
  * @author santos
  */
 public interface IBaseForm {
-    
+
     String getNome();
+
     void setNome(String value);
 }

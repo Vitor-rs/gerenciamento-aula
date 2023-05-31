@@ -8,15 +8,14 @@ import lombok.AllArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 /**
- *
  * @author nicho
  */
 @SuperBuilder
 @AllArgsConstructor
 public abstract class AbstractDto {
-    
+
     public abstract Boolean isValido();
-    
+
     protected Boolean isValido(String value) {
         return value != null && (value.isBlank() && value.isEmpty());
     }

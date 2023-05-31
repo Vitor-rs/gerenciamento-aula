@@ -10,12 +10,11 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 /**
- *
  * @author nicho
  */
 @SuperBuilder
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class CampusDto extends AdapterBaseObjectDto {
-    
+
 }

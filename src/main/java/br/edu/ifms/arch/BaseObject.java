@@ -4,20 +4,16 @@
  */
 package br.edu.ifms.arch;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.MappedSuperclass;
-import java.io.Serializable;
-import java.time.LocalDateTime;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
+import java.io.Serializable;
+import java.time.LocalDateTime;
+
 /**
- *
  * @author santos
  */
 @Data
@@ -27,11 +23,11 @@ import lombok.experimental.SuperBuilder;
 @MappedSuperclass
 public class BaseObject implements IBase, Serializable {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "baseObjectSequence" )
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "baseObjectSequence")
     private Long id;
-    
+
     private String nome;
-    
+
     @Column(columnDefinition = "timestamp(6) default now()")
     private LocalDateTime createdAt;
 

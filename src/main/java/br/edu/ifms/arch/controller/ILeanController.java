@@ -4,24 +4,24 @@
  */
 package br.edu.ifms.arch.controller;
 
-import java.util.List;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 
+import java.util.List;
+
 /**
- *
- * @author nicho
  * @param <T>
  * @param <K>
  * @param <DTO>
  * @param <LEANDTO>
  * @param <F>
+ * @author nicho
  */
 public interface ILeanController<T, K, DTO, LEANDTO, F>
-    extends ISimpleController<T, K, DTO, F> {
+        extends ISimpleController<T, K, DTO, F> {
 
     public ResponseEntity<Page<LEANDTO>> listarLean(Pageable paginacao);
-    
+
     public List<LEANDTO> listarLean();
 }

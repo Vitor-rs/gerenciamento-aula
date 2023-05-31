@@ -4,21 +4,21 @@
  */
 package br.edu.ifms.arch.controller;
 
-import java.util.List;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.util.UriComponentsBuilder;
 
+import java.util.List;
+
 /**
- *
- * @author nicho
  * @param <T>
  * @param <K>
  * @param <DTO>
  * @param <LEANDTO>
  * @param <F>
  * @param <S>
+ * @author nicho
  */
 public class AdapterLeanController<T, K, DTO, LEANDTO, F, S>
         implements ILeanController<T, K, DTO, LEANDTO, F> {

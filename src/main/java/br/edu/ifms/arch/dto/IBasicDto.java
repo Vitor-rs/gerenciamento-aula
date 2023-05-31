@@ -5,11 +5,11 @@
 package br.edu.ifms.arch.dto;
 
 /**
- *
  * @author santos
  */
-public interface IBasicDto  {
-    
+public interface IBasicDto {
+
     Long getId();
+
     String getNome();
 }

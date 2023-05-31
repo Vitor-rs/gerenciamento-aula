@@ -13,7 +13,6 @@ import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
 /**
- *
  * @author nicho
  */
 @Data
@@ -22,6 +21,6 @@ import lombok.experimental.SuperBuilder;
 @NoArgsConstructor
 @EqualsAndHashCode(callSuper = true)
 public class CursoForm extends AdapterBaseObjectForm {
-    
+
     public CampusDto campus;
 }

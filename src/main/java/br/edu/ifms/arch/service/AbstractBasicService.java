@@ -4,36 +4,36 @@
  */
 package br.edu.ifms.arch.service;
 
-import java.util.ArrayList;
-import java.util.List;
+import br.edu.ifms.arch.repository.IArchRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.util.StringUtils;
-import br.edu.ifms.arch.repository.IArchRepository;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- *
- * @author santos
  * @param <T>
  * @param <K>
  * @param <F>
  * @param <R>
+ * @author santos
  */
 public abstract class AbstractBasicService<
-            T, K, F, R extends IArchRepository<T, K>>
+        T, K, F, R extends IArchRepository<T, K>>
         extends AbstractService<T, K, F, R>
         implements IBasicService<T, K, F, R> {
-    
+
     @Override
     public Page<T> listar(String nome, Pageable paginacao) {
         List<Specification<T>> l = new ArrayList();
-        
+
         if (StringUtils.hasText(nome)) {
             Specification<T> spec = (root, query, criteriaBuilder)
                     -> criteriaBuilder.like(
-                            root.get("nome"),
-                            "%" + nome + "%");
+                    root.get("nome"),
+                    "%" + nome + "%");
             l.add(spec);
         }
 
